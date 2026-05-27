@@ -76,7 +76,7 @@ jobs:
       - name: Validate tag matches .version
         shell: bash
         run: |
-          test "${VERSION_TAG}" = "$(tr -d '\n' < .version)"
+          test "${VERSION_TAG}" = "$(tr -d '\r\n' < .version)"
 
       - name: Install Wails CLI
         run: go install github.com/wailsapp/wails/v2/cmd/wails@latest

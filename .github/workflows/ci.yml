@@ -32,7 +32,7 @@ jobs:
 
       - name: Check frontend package version matches .version
         run: |
-          test "$(cat .version | tr -d '\n' | sed 's/^v//')" = "$(node -p "require('./frontend/package.json').version")"
+          test "$(tr -d '\r\n' < .version | sed 's/^v//')" = "$(node -p "require('./frontend/package.json').version")"
 
       - name: Install frontend dependencies
         run: npm ci
