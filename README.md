@@ -224,8 +224,15 @@ Release 会执行：
 - 同步版本元数据
 - 安装前端依赖并构建
 - 执行 `go test ./...`
-- 生成源码归档
-- 自动创建 GitHub Release，并附带源码包
+- 按平台编译 Wails 桌面应用
+- 自动创建 GitHub Release，并上传可直接下载的软件包
+
+当前 Release 目标产物：
+
+- `linux-amd64`：`GoT0AgentBattle-vX.Y.Z-linux-amd64.tar.gz`
+- `windows-amd64`：`GoT0AgentBattle-vX.Y.Z-windows-amd64.zip`
+- `macos-amd64`：`GoT0AgentBattle-vX.Y.Z-macos-amd64.zip`
+- `macos-arm64`：`GoT0AgentBattle-vX.Y.Z-macos-arm64.zip`
 
 ### 推荐发布流程
 
