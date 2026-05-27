@@ -1,0 +1,56 @@
+default_judge_profile_id: judge-main
+
+profiles:
+  openai-main:
+    name: OpenAI 主力
+    base_url: https://api.openai.com/v1/chat/completions
+    api_key: sk-your-openai-key
+    model: gpt-4.1
+    timeout_seconds: 90
+    retry_attempts: 2
+    retry_delay_seconds: 2
+
+  claude-main:
+    name: Claude 主力
+    base_url: https://api.anthropic.com/v1/messages
+    api_key: sk-ant-your-key
+    model: claude-sonnet-4-20250514
+    timeout_seconds: 90
+    retry_attempts: 2
+    retry_delay_seconds: 2
+
+  deepseek-main:
+    name: DeepSeek 火力位
+    base_url: https://api.deepseek.com/chat/completions
+    api_key: sk-your-deepseek-key
+    model: deepseek-chat
+    timeout_seconds: 90
+    retry_attempts: 2
+    retry_delay_seconds: 2
+
+  gemini-main:
+    name: Gemini 趋势位
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+    api_key: your-gemini-key
+    model: gemini-2.5-pro
+    timeout_seconds: 90
+    retry_attempts: 2
+    retry_delay_seconds: 2
+
+  ollama-local:
+    name: Ollama 本地位
+    base_url: http://127.0.0.1:11434/v1/chat/completions
+    api_key: ollama
+    model: qwen3:latest
+    timeout_seconds: 120
+    retry_attempts: 1
+    retry_delay_seconds: 1
+
+  judge-main:
+    name: 裁判席
+    base_url: https://api.openai.com/v1/chat/completions
+    api_key: sk-your-openai-key
+    model: gpt-4.1
+    timeout_seconds: 120
+    retry_attempts: 2
+    retry_delay_seconds: 2

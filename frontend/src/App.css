@@ -1,0 +1,533 @@
+.ant-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 24px 28px 28px;
+  color: var(--text-primary);
+}
+
+.battle-layout,
+.battle-main-layout {
+  background: transparent !important;
+}
+
+.battle-header {
+  height: auto !important;
+  line-height: normal !important;
+  padding: 0 0 20px !important;
+}
+
+.battle-title,
+.loading-title {
+  margin: 0 !important;
+  font-family: var(--font-display) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.04em;
+}
+
+.battle-title {
+  font-size: clamp(38px, 5vw, 76px) !important;
+  line-height: 0.92 !important;
+}
+
+.header-subtitle {
+  max-width: 520px;
+  margin-top: 10px;
+  color: var(--text-secondary) !important;
+}
+
+.loading-card {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+  margin: 18vh auto 0;
+}
+
+.loading-kicker,
+.panel-kicker {
+  display: inline-block;
+  color: var(--text-muted) !important;
+  font-size: 12px !important;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.metric-row {
+  min-width: min(56vw, 760px);
+}
+
+.header-actions {
+  flex: 1;
+}
+
+.battle-sider {
+  background: transparent !important;
+  padding-right: 18px;
+}
+
+.battle-content {
+  background: transparent !important;
+}
+
+.battle-stage-shell {
+  display: flex;
+  gap: 18px;
+}
+
+.battle-metric-row {
+  margin-bottom: 18px;
+}
+
+.battle-panel,
+.metric-card,
+.stage-banner,
+.composer-box,
+.agent-panel,
+.chat-card {
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: linear-gradient(180deg, rgba(11, 14, 24, 0.9), rgba(7, 9, 18, 0.82)) !important;
+  box-shadow: var(--shadow-soft) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.battle-panel-main .ant-card-body,
+.battle-panel .ant-card-body,
+.composer-box .ant-card-body {
+  padding: 20px !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.agent-panel {
+  border-left: 3px solid var(--agent-color, rgba(255, 255, 255, 0.08)) !important;
+}
+
+.agent-panel-live {
+  box-shadow: 0 0 0 1px rgba(255, 107, 87, 0.22), 0 16px 42px rgba(0, 0, 0, 0.28) !important;
+}
+
+.agent-avatar {
+  color: #10131b !important;
+  font-weight: 800;
+}
+
+.agent-tagline {
+  margin-top: 12px;
+  color: var(--text-secondary) !important;
+}
+
+.agent-meta {
+  margin-top: 8px;
+}
+
+.agent-model-line {
+  display: block;
+  margin-top: 6px;
+}
+
+.mini-progress {
+  margin-top: 8px;
+}
+
+.stage-banner {
+  margin: 18px 0;
+  background: linear-gradient(135deg, rgba(255, 107, 87, 0.14), rgba(76, 201, 240, 0.06)) !important;
+}
+
+.stage-banner-layout {
+  width: 100%;
+}
+
+.stage-banner-copy {
+  flex: 1;
+  min-width: min(100%, 460px);
+}
+
+.stage-banner-mood {
+  margin-top: 8px;
+  margin-bottom: 14px !important;
+  color: var(--text-secondary) !important;
+}
+
+.stage-pressure-row {
+  margin-top: 4px;
+}
+
+.stage-meter {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+.showcase-row {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.broadcast-strip {
+  margin-top: 18px;
+  margin-bottom: 4px;
+  border-radius: 22px !important;
+  background:
+    linear-gradient(135deg, rgba(18, 24, 40, 0.96), rgba(11, 14, 24, 0.82)),
+    linear-gradient(90deg, rgba(255, 107, 87, 0.08), rgba(76, 201, 240, 0.06)) !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), 0 18px 44px rgba(0,0,0,0.16) !important;
+}
+
+.broadcast-strip-copy {
+  max-width: 560px;
+  margin-top: 8px;
+  margin-bottom: 0 !important;
+  color: var(--text-secondary) !important;
+}
+
+.broadcast-progress {
+  min-width: min(100%, 260px);
+  flex: 0 0 260px;
+}
+
+.showcase-card {
+  min-height: 160px;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: linear-gradient(160deg, rgba(17, 21, 35, 0.95), rgba(11, 14, 24, 0.78)) !important;
+}
+
+.showcase-card-hot {
+  background: linear-gradient(160deg, rgba(56, 20, 16, 0.98), rgba(20, 10, 14, 0.78)) !important;
+}
+
+.showcase-card-cool {
+  background: linear-gradient(160deg, rgba(12, 28, 39, 0.98), rgba(10, 15, 28, 0.78)) !important;
+}
+
+.speaker-card {
+  min-width: 180px;
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.speaker-card-subline {
+  margin-top: 8px;
+  margin-bottom: 0 !important;
+  color: var(--text-secondary) !important;
+}
+
+.speaker-card-live {
+  box-shadow: 0 0 0 1px rgba(255, 107, 87, 0.22), 0 18px 46px rgba(255, 107, 87, 0.16);
+}
+
+.chat-feed {
+  display: grid;
+  gap: 12px;
+  min-height: 420px;
+  max-height: 58vh;
+  overflow-y: auto;
+  padding-right: 4px;
+  padding-bottom: 6px;
+  mask-image: linear-gradient(to bottom, transparent 0, black 18px, black calc(100% - 18px), transparent 100%);
+}
+
+.chat-feed::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-feed::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 107, 87, 0.52), rgba(76, 201, 240, 0.42));
+}
+
+.chat-entry {
+  position: relative;
+}
+
+.chat-entry::before {
+  content: "";
+  position: absolute;
+  inset: 10px 16px 10px 10px;
+  border-radius: 24px;
+  background: radial-gradient(circle at left center, rgba(255, 107, 87, 0.08), transparent 60%);
+  filter: blur(16px);
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.chat-entry-judge::before {
+  background: radial-gradient(circle at center, rgba(254, 202, 87, 0.18), transparent 62%);
+  opacity: 0.95;
+}
+
+.chat-entry-audience::before {
+  background: radial-gradient(circle at right center, rgba(189, 195, 199, 0.12), transparent 64%);
+}
+
+.chat-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px !important;
+  isolation: isolate;
+  transition: transform 180ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.chat-card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.32) !important;
+}
+
+.chat-card-glow,
+.chat-card-noise,
+.chat-card-heatbar {
+  position: absolute;
+  pointer-events: none;
+}
+
+.chat-card-glow {
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.08), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 44%);
+  opacity: 0.75;
+}
+
+.chat-card-noise {
+  inset: 0;
+  opacity: 0.1;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.14) 0 1px, transparent 1.2px),
+    radial-gradient(circle at 72% 62%, rgba(255, 255, 255, 0.1) 0 1px, transparent 1.4px);
+  background-size: 26px 26px, 34px 34px;
+  mix-blend-mode: screen;
+}
+
+.chat-card-heatbar {
+  left: 16px;
+  right: 16px;
+  top: 0;
+  height: 3px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.chat-card-heatbar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.24);
+}
+
+.chat-card-standard {
+  background: linear-gradient(180deg, rgba(17, 20, 31, 0.94), rgba(9, 12, 21, 0.86)) !important;
+}
+
+.chat-card-judge {
+  background: linear-gradient(135deg, rgba(254, 202, 87, 0.14), rgba(255, 255, 255, 0.04)) !important;
+  border-color: rgba(254, 202, 87, 0.24) !important;
+  box-shadow: 0 0 0 1px rgba(254, 202, 87, 0.12), 0 20px 52px rgba(77, 46, 10, 0.26) !important;
+}
+
+.chat-card-audience {
+  background: linear-gradient(135deg, rgba(116, 125, 140, 0.14), rgba(255, 255, 255, 0.03)) !important;
+  border-style: dashed !important;
+}
+
+.chat-card-hype {
+  background:
+    linear-gradient(135deg, rgba(88, 20, 28, 0.92), rgba(22, 9, 18, 0.86)),
+    linear-gradient(180deg, rgba(11, 14, 24, 0.9), rgba(7, 9, 18, 0.82)) !important;
+  border-color: rgba(255, 107, 87, 0.18) !important;
+}
+
+.chat-card-precision {
+  background:
+    linear-gradient(135deg, rgba(15, 32, 56, 0.9), rgba(9, 14, 25, 0.84)),
+    linear-gradient(180deg, rgba(11, 14, 24, 0.9), rgba(7, 9, 18, 0.82)) !important;
+  border-color: rgba(112, 161, 255, 0.18) !important;
+}
+
+.chat-avatar {
+  position: relative;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.04), 0 10px 22px rgba(0, 0, 0, 0.22);
+  color: #0c1019 !important;
+  font-weight: 800;
+}
+
+.chat-body {
+  min-width: 0;
+}
+
+.chat-meta {
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.chat-submeta {
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.chat-content {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0 !important;
+  font-size: 15px;
+  line-height: 1.75 !important;
+  letter-spacing: 0.01em;
+  text-wrap: pretty;
+}
+
+.chat-mention-tag {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #dff6ff !important;
+  box-shadow: inset 0 0 0 1px rgba(76, 201, 240, 0.18);
+}
+
+.chat-cue-tag {
+  background: rgba(255, 120, 196, 0.12) !important;
+  color: #ffd1ec !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 120, 196, 0.18);
+}
+
+.chat-body .ant-typography {
+  color: var(--text-secondary);
+}
+
+.composer-box {
+  margin-top: 18px;
+}
+
+.quick-row {
+  margin-bottom: 14px;
+}
+
+.topic-row {
+  margin-bottom: 14px;
+}
+
+.rank-index {
+  color: var(--accent-warm) !important;
+}
+
+.judge-point {
+  margin-bottom: 6px !important;
+}
+
+.judge-point-negative {
+  color: #f8c3c8 !important;
+}
+
+.settings-shell {
+  padding-top: 8px;
+}
+
+.settings-panel {
+  min-height: 100%;
+}
+
+.settings-blurb {
+  min-width: 340px;
+}
+
+.persona-editor {
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  background: linear-gradient(180deg, rgba(14, 17, 28, 0.92), rgba(8, 10, 19, 0.86)) !important;
+}
+
+.global-error {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: min(440px, calc(100vw - 40px));
+  z-index: 20;
+}
+
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(circle at center, black 38%, transparent 92%);
+  pointer-events: none;
+}
+
+.bg-radial {
+  position: absolute;
+  width: 560px;
+  height: 560px;
+  border-radius: 999px;
+  filter: blur(28px);
+  opacity: 0.36;
+  pointer-events: none;
+}
+
+.bg-radial-left {
+  top: -140px;
+  left: -120px;
+  background: radial-gradient(circle, rgba(255, 107, 87, 0.72), rgba(255, 107, 87, 0));
+}
+
+.bg-radial-right {
+  right: -120px;
+  bottom: -220px;
+  background: radial-gradient(circle, rgba(76, 201, 240, 0.62), rgba(76, 201, 240, 0));
+}
+
+.bg-spotlight {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 999px;
+  opacity: 0.15;
+  filter: blur(12px);
+  pointer-events: none;
+}
+
+.bg-spotlight-left {
+  top: 12%;
+  left: 18%;
+  background: conic-gradient(from 180deg, rgba(255, 159, 67, 0.4), rgba(255, 107, 87, 0));
+}
+
+.bg-spotlight-right {
+  bottom: 14%;
+  right: 16%;
+  background: conic-gradient(from 0deg, rgba(76, 201, 240, 0.42), rgba(76, 201, 240, 0));
+}
+
+.theme-arcade-fever {
+  --accent-hot: #ff4fd8;
+  --accent-cool: #3bf6ff;
+  --accent-warm: #ffe347;
+}
+
+.theme-iron-war-room {
+  --accent-hot: #ef5a3d;
+  --accent-cool: #8ec5ff;
+  --accent-warm: #c4a56a;
+}
+
+@media (max-width: 1200px) {
+  .ant-shell {
+    padding: 16px;
+  }
+
+  .battle-stage-shell {
+    display: block;
+  }
+
+  .metric-row {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .settings-blurb {
+    min-width: 0;
+  }
+}
