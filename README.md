@@ -231,7 +231,6 @@ Release 会执行：
 
 - `linux-amd64`：`GoT0AgentBattle-vX.Y.Z-linux-amd64.tar.gz`
 - `windows-amd64`：`GoT0AgentBattle-vX.Y.Z-windows-amd64.zip`
-- `macos-amd64`：`GoT0AgentBattle-vX.Y.Z-macos-amd64.zip`
 - `macos-arm64`：`GoT0AgentBattle-vX.Y.Z-macos-arm64.zip`
 
 ### 推荐发布流程
